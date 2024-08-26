@@ -1,0 +1,131 @@
+.footer_top {
+    background-color: #EA7E2A;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 1px solid #fff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.footer {
+    background-color: #EA7E2A;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 300;
+    color: rgba(255,255,255,.8);
+    border-top: 1px solid #fff;
+
+    .heading {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-align: left;
+        font-weight: 400;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    .center-block{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #F2F2F2;
+        line-height: 35px;
+    }
+    .lh-20 {
+        line-height: 20px;
+    }
+
+    .center-block-title{
+        font-weight: 500;
+        text-decoration: underline;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #F2F2F2;
+        line-height: 30px;
+    }
+
+    ul li,.footer_middle ul li {
+        list-style: none
+    }
+
+    a {
+        color: rgba(255,255,255,.8);
+        line-height: 30px
+    }
+
+    a:hover {
+        color: #fff;
+        text-decoration: none
+    }
+}
+
+.footer_bottom {
+    background-color: #EA7E2A;
+    font-size: 14px;
+    border-top: 1px solid #fff;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: #FFFFFF;
+    line-height: 30px
+
+    a {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;    
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #fff
+    }
+}
+
+
+/* LARGE DEVICES */
+@media (min-width: 991px) and (max-width: 1200px) {
+    .footer_top .social-icon {
+        margin-left: 50px;
+    }
+}
+
+/* MEDIUM DEVICES */
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer_top .social-icon {
+        margin-left: 20px;
+    }
+}
+
+/* SMALL DEVICES */
+@media (max-width: 767px) {
+    .footer_top {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+    .footer-top-text, .footer-top-btn {
+        text-align: center;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer_bottom {
+        .company-crafted, .company-info{
+            text-align: center;
+        }
+    }
+}
+

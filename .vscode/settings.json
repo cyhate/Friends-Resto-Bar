@@ -1,0 +1,21 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css/scss",
+            "savePathReplacementPairs": null,
+            "savePathSegmentKeys": null,
+            "savePathSegmentValues": null
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.indentType": "tab",
+    "liveSassCompile.settings.indentWidth": 1,
+    "liveSassCompile.settings.linefeed": "crlf"
+}

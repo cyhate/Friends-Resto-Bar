@@ -1,0 +1,178 @@
+.alt-sections {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background: #F0EEF1;
+}
+
+.border-off {
+    border-bottom: none;
+}
+
+.alt-sections-text {
+    max-width: 660px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #00416D;
+    line-height: 22px;
+    padding: 0;
+    margin: 0 0 30px;
+    display: block;
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 400;
+        padding: 0;
+        margin: 0 0 30px;
+        display: block;
+        font-weight: 500;
+    }
+
+    .section-left {
+    float: left;
+    text-align: left; 
+    height: 100%;
+    }
+
+    .section-right {
+        float: left;
+    }
+
+    .btn {
+        margin-top: 10px
+    }
+}
+
+.section-left {
+    text-align: left;
+    padding-right: 90px;
+}
+
+.section-right {
+    text-align: left;
+    padding-left: 90px
+}
+
+.alt-sections-image {
+    height: 450px;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    border-radius: 5px;
+}
+
+
+@media (min-width: 1401px) and (max-width:1600px) {
+    .alt-sections {
+        padding-top:60px;
+        padding-bottom: 60px;
+    }
+
+    .section-left {
+        padding-right: 60px;
+    }
+
+    .section-right {
+        padding-left: 60px;
+    }
+
+    .alt-sections-image,.alt-sections-text {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width:1400px) {
+    .alt-sections {
+        padding-top:50px;
+        padding-bottom: 50px;
+    }
+
+    .section-left {
+        padding-right: 50px;
+    }
+
+    .section-right {
+        padding-left: 50px;
+    }
+    .alt-sections-image,.alt-sections-text {
+        height: 500px;
+    }
+}
+
+@media (min-width: 991px) and (max-width:1200px) {
+    .alt-sections {
+        padding-top:40px;
+        padding-bottom: 40px;
+    }
+
+    .section-left {
+        padding-right: 40px;
+    }
+
+    .section-right {
+        padding-left: 40px;
+    }
+
+    .alt-sections-image {
+        height: 500px;
+    }
+
+    .alt-sections-text {
+        height: 500px;
+        font-size: 14px;
+    }
+
+    .alt-sections-text h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .alt-sections {
+        padding-top:0;
+        padding-bottom: 30px;
+    }
+
+    .alt-sections-text {
+        height: auto;
+        padding: 20px 10px 10px;
+        font-size: 15px;
+        float: none;
+        max-width: 100%
+    }
+
+    .alt-sections-text .btn {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .alt-sections-image {
+        height: 400px;
+    }
+
+    .alt-sections-text h2 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .section-left,.section-right {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .alt-sections-image {
+        height:300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .alt-sections-image {
+        height: 200px;
+    }
+}

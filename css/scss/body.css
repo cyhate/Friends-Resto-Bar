@@ -1,0 +1,58 @@
+body, html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: #fcf7f3;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-xl {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.section-darken {
+  background: #F0EEF1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-blue {
+  background: #0177C1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid #EA7E2A;
+}
+
+.section-search-info {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.darken {
+  position: absolute;
+  top: 0px;
+  left: 0xp;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .section-darken {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .section-xl {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

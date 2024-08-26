@@ -1,0 +1,38 @@
+.slick-dotted.slick-slider {
+  margin-bottom: 30px; 
+}
+
+//.slick-dots{
+	
+//}
+
+ul.slick-dots{
+	list-style: none;
+}
+ul.slick-dots li{
+	margin: 0 3px;
+	width:30px;
+	height:20px;
+	list-style: none;
+}
+
+ul.slick-dots li button:before{
+	opacity: 0.3;
+	background: #00416D;
+	border-radius: 5px;
+	color: #00416D;
+	width:20px;
+	height:20px;	
+	content: '';
+	
+}
+ul.slick-dots li.slick-active button:before{
+	background: #00416D;
+	color: #00416D;
+	border-radius: 5px;
+	width:30px;
+	height:20px;
+	opacity: 1;
+}
+
+

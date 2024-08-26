@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="description" content="Luxury Holiday Villa for Rent in Paphos, Coral Bay, Cyprus. Over 150 luxury Cyprus holiday villas to rent, private &amp; affordable holiday villas with pools. ✔️ Personal Service ✔️ No Booking Fees ✔️ Booking Protection Insurance.">
+    <meta name="keywords" content="Villas, rent, Cyprus, holiday, villa, rentals, Paphos, luxury, private, pool, apartments, holidays, sea views, beach, coral bay">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/f6c0fb51bc.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="/pickadate/lib/themes/classic.css"/>
+    <link rel="stylesheet" href="/pickadate/lib/themes/classic.date.css"/>
+    <link rel="stylesheet" href="/pickadate/lib/themes/classic.time.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+    <link rel="icon" href="/favicon.png">
+
+    <link rel="stylesheet" href="css/scss/bootstrap.css"/>
+    <link rel="stylesheet" href="css/scss/body.css"/>
+    <link rel="stylesheet" href="css/scss/nav.css"/>
+    <link rel="stylesheet" href="css/scss/header.css"/>
+    <link rel="stylesheet" href="css/scss/swiper.css"/>
+    <link rel="stylesheet" href="css/scss/section-bg-img.css"/>
+    <link rel="stylesheet" href="css/scss/home-search.css"/>
+    <link rel="stylesheet" href="css/scss/full-search.css"/>
+    <link rel="stylesheet" href="css/scss/services.css"/>
+    <link rel="stylesheet" href="css/scss/properties.css"/>
+    <link rel="stylesheet" href="css/scss/page.css"/>
+    <link rel="stylesheet" href="css/scss/scroll-nav.css"/>
+    <link rel="stylesheet" href="css/scss/properties-booking-bar.css"/>
+    <link rel="stylesheet" href="css/scss/properties-listing-heading.css"/>
+    <link rel="stylesheet" href="css/scss/cars-listing.css"/>
+    <link rel="stylesheet" href="css/scss/property-desciption.css"/>
+    <link rel="stylesheet" href="css/scss/destinations.css"/>
+    <link rel="stylesheet" href="css/scss/section-expandaple.css"/>
+    <link rel="stylesheet" href="css/scss/alt-section.css"/>
+    <link rel="stylesheet" href="css/scss/boxes-listing.css"/>
+    <link rel="stylesheet" href="css/scss/footer.css"/>
+    <link rel="stylesheet" href="css/scss/slick-slider.css"/>
+
+</head>
+<body>
+
+<!-- header -->
+<div class="header_wrap_white_back"></div>
+<div class="header_wrap white">
+    <div class="container header">
+        <nav class="navbar navbar-default navbar-right">
+            <div class="navbar-header ">
+                <a href="/" class="logo">
+                    <img src="images/logo@2x.png" alt="">
+                </a>  
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="/properties/search:for-rent:sort-price-desc">Properties for Rent</a></li>
+                        <li><a href="/properties/search:for-sale:type-apartments,houses,commercial:sort-created_at-desc">Properties for Sale</a></li>
+                        <li><a href="/properties/search:for-land:type-land:sort-created_at-desc">Land for Sale</a></li>
+                        <li><a href="/articles">Information Guide</a></li>
+                        <li><a href="/about">Company Profile</a></li>
+                        <li><a href="/wishlist">Wishlist</a></li>
+                        <li><a href="contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-social">
+                        <li>
+                            <a class="" href="https://www.facebook.com/cyrentbuy">
+                                <i class="fab fa-fw fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="https://www.instagram.com/meinhardbundschuh/">
+                                <i class="fab fa-fw fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="https://www.youtube.com/@einfach-zypern/">
+                                <i class="fab fa-fw fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="https://twitter.com/BSHoldingLTD">
+                                <i class="fab fa-fw fa-twitter"></i>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="" href="https://www.linkedin.com/in/meinhard-bundschuh-3a8524178/">
+                                <i class="fab fa-fw fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="https://t.me/Zypern_Immobilien">
+                                <i class="fab fa-fw fa-telegram"></i>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </nav>			
+    </div>
+</div>
+
+<!-- search -->
+<div class="section-blue full-zero-xs">
+    <div class="container" >
+        <div class="home_hero_search aos-init aos-animate" data-aos="fade-up">
+            <div class="search_wrap full_search_wrap">		
+                <div class="search">	
+                    <form name="search" id="search" method="get" action="properties/to_search_url" data-action="grab-results-count" data-url="properties/to_search_count" data-target=".search_results_count" data-label="(0 results)">
+                        <div class="row gutters-0">
+                            <input type="hidden" name="status" value="sale">
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+                    <select class="form-control selectpickerlocation home-search-pick-up" title="Pick-Up Location" >
+                        <option data-subtext="(375)" value="paphos">Paphos</option>	
+                        <option data-subtext="(46)" value="nicosia">Nicosia</option>	
+                        <option data-subtext="(67)" value="limassol">Limassol</option>	
+                        <option data-subtext="(6)" value="larnaca">Larnaka</option>    
+                      </select>
+                     
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 search_from">
+                    <div class="form-group home-search-arrival">
+                        <input type="text" name="from" id="from" value="" placeholder="Pick-Up Date" class="form-control datepicker" data-action="datepicker-from-to" data-from="#from.datepicker" data-to="#to.datepicker" data-days-min="0">
+                        <span class="icon-addon"><i class="fal fa-calendar-alt"></i></span>
+                    </div>     
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+                    <select class="form-control selectpickerlocation home-search-drop-off" title="Drop-Off Location" >
+                        <option data-subtext="(375)" value="paphos">Paphos</option>	
+                        <option data-subtext="(46)" value="nicosia">Nicosia</option>	
+                        <option data-subtext="(67)" value="limassol">Limassol</option>	
+                        <option data-subtext="(6)" value="larnaca">Larnaka</option>   
+                      </select>
+                   
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 search_to">
+                    <div class="form-group home-search-departure">
+                        <input type="text" name="to" id="to" value="" placeholder="Drop-Off Date" class="form-control datepicker" >
+                        <span class="icon-addon"><i class="fal fa-calendar-alt"></i></span>
+                    </div>     
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 reference-field">
+                    <div class="form-group home-search-reference">                       
+                        <input type="text" name="reference" id="reference" value="" placeholder="Promo Code" class="form-control ">          
+                    </div>     
+                </div>
+                <div class="form-group col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                                <a href="javascript:$('#search').submit()" class="btn home-search-btn">
+                                <span class="home-search-btn-span"><i class="fa-regular fa-magnifying-glass"></i> GET QUOTE </span>
+                                <span class="search_results_count"></span>
+                                </a>
+                            </div>                 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>     
+
+<!-- cars-listing-->
+<div class="section-darken">	
+    <div class="container">	   
+        <div class="row home-cars-slider">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="cars-listing">
+                <div class="car-heading">
+                    <h3>Group C - Nissan Note </h3>
+                    5 Door, Automatic, 14000cc  5 Door
+                </div>
+
+                <div class="car-image">
+                    <img class="img-responsive" src="images/car.jpg" alt="404">   
+                </div>
+                <div class="specs">
+                    <div class="spec" data-toggle="tooltip" data-placement="top" title="3 Seats">
+                        <img src="images/icon-setas.png" alt="404">   
+                        <strong>5</strong>  
+                    </div>
+                    <div class="spec">
+                        <img  src="images/icon-doors.png" alt="404">   
+                        <strong>5</strong>  
+                    </div>
+                    <div class="spec">
+                        <img  src="images/icon-large-bag.png" alt="404">   
+                        <strong>5</strong> 
+                    </div>
+                    <div class="spec">
+                        <img src="images/icon-small-bag.png" alt="404">   
+                        <strong>5</strong>  
+                    </div>
+                    <div class="spec">
+                        <img  src="images/icon-transmition.png" alt="404">   
+                        <strong>5</strong>  
+                    </div>
+                    <div class="spec">
+                        <img  src="images/icon-ac.png" alt="404">   
+                        <strong>5</strong> 
+                    </div>
+                </div>
+                <a href="#" class="btn btn-default btn-cars"> 
+                    <span>FROM €20 <small>(per say)</small></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="cars-listing">
+                  <div class="car-heading">
+                      <h3>Group C - Nissan Note </h3>
+                      5 Door, Automatic, 14000cc  5 Door
+                  </div>
+  
+                  <div class="car-image">
+                      <img class="img-responsive" src="images/car.jpg" alt="404">   
+                  </div>
+                  <div class="specs">
+                      <div class="spec" data-toggle="tooltip" data-placement="top" title="3 Seats">
+                          <img src="images/icon-setas.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-doors.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-large-bag.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                      <div class="spec">
+                          <img src="images/icon-small-bag.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-transmition.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-ac.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                  </div>
+                  <a href="#" class="btn btn-default btn-cars"> 
+                      <span>FROM €20 <small>(per say)</small></span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="cars-listing">
+                  <div class="car-heading">
+                      <h3>Group C - Nissan Note </h3>
+                      5 Door, Automatic, 14000cc  5 Door
+                  </div>
+  
+                  <div class="car-image">
+                      <img class="img-responsive" src="images/car.jpg" alt="404">   
+                  </div>
+                  <div class="specs">
+                      <div class="spec" data-toggle="tooltip" data-placement="top" title="3 Seats">
+                          <img src="images/icon-setas.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-doors.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-large-bag.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                      <div class="spec">
+                          <img src="images/icon-small-bag.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-transmition.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-ac.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                  </div>
+                  <a href="#" class="btn btn-default btn-cars"> 
+                      <span>FROM €20 <small>(per say)</small></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="cars-listing">
+                  <div class="car-heading">
+                      <h3>Group C - Nissan Note </h3>
+                      5 Door, Automatic, 14000cc  5 Door
+                  </div>
+  
+                  <div class="car-image">
+                      <img class="img-responsive" src="images/car.jpg" alt="404">   
+                  </div>
+                  <div class="specs">
+                      <div class="spec" data-toggle="tooltip" data-placement="top" title="3 Seats">
+                          <img src="images/icon-setas.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-doors.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-large-bag.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                      <div class="spec">
+                          <img src="images/icon-small-bag.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-transmition.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-ac.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                  </div>
+                  <a href="#" class="btn btn-default btn-cars"> 
+                      <span>FROM €20 <small>(per say)</small></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="cars-listing">
+                  <div class="car-heading">
+                      <h3>Group C - Nissan Note </h3>
+                      5 Door, Automatic, 14000cc  5 Door
+                  </div>
+  
+                  <div class="car-image">
+                      <img class="img-responsive" src="images/car.jpg" alt="404">   
+                  </div>
+                  <div class="specs">
+                      <div class="spec" data-toggle="tooltip" data-placement="top" title="3 Seats">
+                          <img src="images/icon-setas.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-doors.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-large-bag.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                      <div class="spec">
+                          <img src="images/icon-small-bag.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-transmition.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-ac.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                  </div>
+                  <a href="#" class="btn btn-default btn-cars"> 
+                      <span>FROM €20 <small>(per say)</small></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="cars-listing">
+                  <div class="car-heading">
+                      <h3>Group C - Nissan Note </h3>
+                      5 Door, Automatic, 14000cc  5 Door
+                  </div>
+                  <div class="car-image">
+                      <img class="img-responsive" src="images/car.jpg" alt="404">   
+                  </div>
+                  <div class="specs">
+                      <div class="spec" data-toggle="tooltip" data-placement="top" title="3 Seats">
+                          <img src="images/icon-setas.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-doors.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-large-bag.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                      <div class="spec">
+                          <img src="images/icon-small-bag.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-transmition.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-ac.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                  </div>
+                  <a href="#" class="btn btn-default btn-cars"> 
+                      <span>FROM €20 <small>(per say)</small></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="cars-listing">
+                  <div class="car-heading">
+                      <h3>Group C - Nissan Note </h3>
+                      5 Door, Automatic, 14000cc  5 Door
+                  </div>
+  
+                  <div class="car-image">
+                      <img class="img-responsive" src="images/car.jpg" alt="404">   
+                  </div>
+                  <div class="specs">
+                      <div class="spec" data-toggle="tooltip" data-placement="top" title="3 Seats">
+                          <img src="images/icon-setas.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-doors.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-large-bag.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                      <div class="spec">
+                          <img src="images/icon-small-bag.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-transmition.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-ac.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                  </div>
+                  <a href="#" class="btn btn-default btn-cars"> 
+                      <span>FROM €20 <small>(per say)</small></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="cars-listing">
+                  <div class="car-heading">
+                      <h3>Group C - Nissan Note </h3>
+                      5 Door, Automatic, 14000cc  5 Door
+                  </div>
+  
+                  <div class="car-image">
+                      <img class="img-responsive" src="images/car.jpg" alt="404">   
+                  </div>
+                  <div class="specs">
+                      <div class="spec" data-toggle="tooltip" data-placement="top" title="3 Seats">
+                          <img src="images/icon-setas.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-doors.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-large-bag.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                      <div class="spec">
+                          <img src="images/icon-small-bag.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-transmition.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-ac.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                  </div>
+                  <a href="#" class="btn btn-default btn-cars"> 
+                      <span>FROM €20 <small>(per say)</small></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="cars-listing">
+                  <div class="car-heading">
+                      <h3>Group C - Nissan Note </h3>
+                      5 Door, Automatic, 14000cc  5 Door
+                  </div>
+  
+                  <div class="car-image">
+                      <img class="img-responsive" src="images/car.jpg" alt="404">   
+                  </div>
+                  <div class="specs">
+                      <div class="spec" data-toggle="tooltip" data-placement="top" title="3 Seats">
+                          <img src="images/icon-setas.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-doors.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-large-bag.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                      <div class="spec">
+                          <img src="images/icon-small-bag.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-transmition.png" alt="404">   
+                          <strong>5</strong>  
+                      </div>
+                      <div class="spec">
+                          <img  src="images/icon-ac.png" alt="404">   
+                          <strong>5</strong> 
+                      </div>
+                  </div>
+                  <a href="#" class="btn btn-default btn-cars"> 
+                      <span>FROM €20 <small>(per say)</small></span>
+                  </a>
+                </div>
+              </div>
+        </div>
+    </div>               
+</div>           
+
+
+<!-- footer -->
+<div class="footer_top">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-sm-6 col-xs-12 text-left footer-top-text">
+				Havent found what you are looking for ? 
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 text-right footer-top-btn">
+				<a href="#" class="btn btn-default btn-border"> 
+                    <span>GET IN TOUCH <i class="fal fa-fw fa-arrow-right"></i></span>
+                </a>
+			</div>
+		</div>					
+	</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row gutters-6">			
+				<ul class="col-md-2 col-sm-6 col-xs-12 col-md-push-6">
+				    <li class="heading">FONTANA</li>
+						
+						<li>
+			                <a class="center-block" href="">
+                                Car Hire Fleet</a>
+			            </li>
+						 <li>
+			                <a class="center-block" href="">
+                                Car Hire Terms</a>
+			            </li>
+						<li>
+			                <a class="center-block" href="">
+                                Explore Cyprus</a>
+			            </li>
+						<li>
+			                <a class="center-block" href="">
+                                Compnay Profiley</a>
+			            </li>
+				</ul>
+                <ul class="col-md-2 col-sm-6 col-xs-12 col-md-push-6">
+				    <li class="heading">LEGAL</li>
+						<li>
+			                <a class="center-block" href="">
+                                Privacy Policy</a>
+			            </li>
+						 <li>
+			                <a class="center-block" href="">
+                                Terms & Conditions</a>
+			            </li>
+						<li>
+			                <a class="center-block" href="">
+                                Cookies Policy</a>
+			            </li>
+				</ul>
+                <ul class="col-md-2 col-sm-6 col-xs-12 col-md-push-6">
+				    <li class="heading">CONTACT</li>
+						<li>
+			                <a class="center-block" href="">
+                                3, Dimitraki Papamiltiadous Str,
+                                8830, Polis Chrysochous
+                                P. O. Box 66012, Paphos, Cyprus
+                            </a>
+			            </li>
+						 <li>
+			                <a class="center-block" href="">
+                                Tel: +35726321031
+                                Mobile: +35799683243
+                                Fax: +357 26322039
+                                info@paphoscarrentals.com 
+                            </a>
+			            </li>
+				</ul>
+                <ul class="col-md-6 col-sm-6 col-xs-12 col-md-pull-6">
+				    <li class="heading">LEGAL DISCLAIMER</li>
+						<li>
+			                <a class="center-block" href="">
+                                All information deemed reliable but not guaranteed. All properties are subject to prior sale, change or withdrawal. Neither listing estate agent (s) or information provider(s) shall be responsible for any typographical errors, misinformation, misprints and shall be held totally harmless. Listing(s) information is provided for consumers personal, non-commercial use and may not be used for any purpose other than to identify prospective services consumers may be interested in purchasing.</a>
+			            </li>
+				</ul>
+		</div>
+	</div>
+</div>
+
+<div class="footer_bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 text-left company-crafted">
+				HANDCRAFTED BY UNITED WORX LTD
+			</div>
+			<div class="col-md-6 col-sm-12 text-right company-info">
+                (c) 2022 - FONTANA AUTO RENTALS LTD
+			</div>
+		</div>					
+	</div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js" integrity="sha512-br1fiTA+PEw4yadX2MHhKHicHH+PaXxgVMSC+desL1MPniEIEKQGg9oH1kiqLL/N/DZ9jK6/JVwgkkmep9WaAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script src="/pickadate/lib/picker.js"></script>
+<script src="/pickadate/lib/picker.date.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery.min.js"></script>
+<script src="/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
+
+<script src="/js/bootstrap-select.js"></script>
+<script src="/js/datepicker-form-to.js"></script>
+<script src="/js/slick-carousel.js"></script>
+<script src="js/section-expandaple.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/app.js"></script>
+
+
+</body>
+</html>

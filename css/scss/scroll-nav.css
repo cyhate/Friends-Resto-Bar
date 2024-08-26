@@ -1,0 +1,78 @@
+.scrollnav {
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: #F0EEF1;
+  max-width: 1540px;
+  border-radius: 5px;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.scrollnav_list {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  list-style-type: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollnav_list::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollnav_item {
+  flex-shrink: 0;
+}
+
+.scrollnav a {
+  border: none;
+  border-radius: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 1px;
+  margin-right: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-flex;
+  height: 60px;
+  color: #231F20;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+.scrollnav a:hover, .scrollnav a.is-active {
+  background: #e9e6ea;
+  color: #231F20;
+}
+
+.scrollnav_shadow {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to right, rgba(240, 238, 241, 0), #F0EEF1 80%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.scrollnav_shadow.is-visible {
+  opacity: 1;
+}
+
+.scrollnav_shadow_start {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.scrollnav_shadow_end {
+  right: 0;
+}

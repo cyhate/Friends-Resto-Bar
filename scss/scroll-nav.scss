@@ -1,0 +1,87 @@
+$scrollnav-height: 60px;
+$scrollnav-shadow-width: 60px;
+$scrollnav-color-back: #F0EEF1;
+$scrollnav-color-text: #231F20;
+$scrollnav-color-active-back: darken($scrollnav-color-back, 3%);
+$scrollnav-color-active-text:#231F20;
+
+.scrollnav {
+    position: relative;
+    height: $scrollnav-height;
+    display: flex;
+    align-items: center;
+    background: $scrollnav-color-back;
+    max-width: 1540px;
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.scrollnav_list {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    list-style-type: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scrollnav_list::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollnav_item {
+    flex-shrink: 0;
+}
+
+.scrollnav a {
+    border: none;
+    border-radius: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-flex;
+    height: 60px;
+    color: $scrollnav-color-text;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in; 
+    &:hover,
+    &.is-active {
+        background: $scrollnav-color-active-back;
+        color: $scrollnav-color-active-text;
+    }
+}
+
+.scrollnav_shadow {
+    width: $scrollnav-shadow-width;
+    height: $scrollnav-height;
+    position: absolute;
+    top: 0;
+    // Using 0% rgba value instead of transparent because of Safari.
+    background: linear-gradient(to right, rgba($scrollnav-color-back, 0), $scrollnav-color-back 80%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.1s;
+    &.is-visible {
+        opacity: 1;
+    }
+}
+
+.scrollnav_shadow_start {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.scrollnav_shadow_end {
+    right: 0;
+}

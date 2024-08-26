@@ -1,0 +1,119 @@
+
+.featured h3{
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 40px;
+    color: #4C5678;
+}
+
+.categories-box {
+    position: relative;
+    display: block;
+    background: #fff;
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 270px;
+    transform: translate3d(0,0,0);
+    border-radius: 5px;
+    overflow: hidden;
+
+    .details, .image {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+
+    .image {
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all .5s;
+        object-fit: cover;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0;
+        padding: 20px;
+        height: 100%;
+        font-size: 15px;
+        font-weight: 300;
+        bottom: 0;
+        background: rgba(0,0,0,.3);
+        text-shadow: 0 0 2px rgba(0,0,0,.5);
+        color: #FFF;
+    }
+
+    .title {
+        color: white;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.50);
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .details {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .description {
+        display: block;
+        max-width: 300px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 400;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.50);
+        line-height: 1.3;
+    }
+}
+
+.categories-box:hover .image {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 600px) {
+    .container-xs-px-0,.container-xs-px-0 .col-xxs {
+        padding-left:0;
+        padding-right: 0;
+    }
+
+    .container-xs-px-0 .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .categories-box {
+        height: 200px;
+        font-size: 14px;
+
+
+        .details {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .title {
+            font-size: 30px;
+        }
+
+        .title small {
+            font-size: 16px;
+        }
+    }
+}

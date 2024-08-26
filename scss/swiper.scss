@@ -1,0 +1,92 @@
+.home-hero-swiper {
+    width: 100%;
+    overflow: hidden;
+    height: 750px;
+    border-bottom: 5px solid #EA7E2A;
+  }
+
+.home-hero-swiper .swiper-slide{
+    position: relative;
+    text-align: center;
+    color: white;
+
+  }
+
+.home-hero-swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.home-hero-swiper .swiper-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.home-hero-swiper .swiper-heading {
+  font-family: 'Montserrat', sans-serif; 
+  width: 100%; 
+  font-size: 75px;
+  line-height: 1.2;
+  color: #F0EEF1;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 0 0 20px rgba(0,0,0,0.50);
+}
+
+.home-hero-swiper .swiper-heading small { 
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 300;
+    display: block;
+}
+
+
+@media (max-width: 1201px) {
+
+  .home-hero-swiper {
+    height: 650px;
+  }  
+
+  .home-hero-swiper .swiper-heading {
+    font-size: 60px;
+  }
+
+  .home-hero-swiper .swiper-heading small { 
+    font-size: 18px;
+  }  
+}
+
+@media (max-width:991px) {
+
+  .home-hero-swiper {
+    height: 525px;
+  }  
+
+  .home-hero-swiper .swiper-heading {
+    font-size: 50px;
+  }
+
+  .home-hero-swiper .swiper-heading small { 
+    font-size: 15px;
+  }  
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 600px) {
+  .home-hero-swiper {
+    height: 300px;
+  }  
+
+  .home-hero-swiper .swiper-heading {
+    font-size: 30px;
+  }
+
+  .home-hero-swiper .swiper-heading small { 
+    font-size: 13px;
+  }
+}	

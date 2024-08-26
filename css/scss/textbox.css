@@ -1,0 +1,18 @@
+.textbox {
+  text-align: center;
+  display: block;
+}
+.textbox img {
+  display: inline;
+}
+.textbox .titles {
+  font-size: 26px;
+  color: #4C5678;
+  text-align: center;
+}
+.textbox .desc {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  color: #363636;
+  text-align: center;
+}
